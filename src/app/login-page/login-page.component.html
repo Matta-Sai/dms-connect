@@ -21,7 +21,9 @@
         name="otp"
         placeholder="OTP"
       />
-      <button class="login-button" (click)="onLogin()">Login</button>
+      <button class="login-button" (click)="onLogin()">
+        <a class="link" [href]="loginUrl" download target="_blank">Login</a>
+      </button>
     </div>
   </form>
 </div>

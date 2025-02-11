@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './login-page.component.css'
 })
 export class LoginPageComponent {
+  loginUrl : string =""
   userId : string = ''
   otp :string = ''
   loginKeyUrl = "http://dmsconnect.maruti.com/dmsportal/api/loginuserkey/"
@@ -45,8 +46,7 @@ export class LoginPageComponent {
       alert("Enter OTP")
     } 
     else {
-      window.open('http://dmsconnect.maruti.com/forms/frmservlet?config=webstart&p_user_id='+this.userId+"&p_pmc=1&key="+this.otp+"&sId="+sId)
+      this.loginUrl = 'http://dmsconnect.maruti.com/forms/frmservlet?config=webstart&p_user_id='+this.userId+"&p_pmc=1&key="+this.otp+"&sId="+sId
     }
-    
   }
 }

@@ -99,3 +99,7 @@ label {
     text-transform: uppercase;
 }
 
+.link {
+    color: #fff;
+    text-decoration: none;
+}
