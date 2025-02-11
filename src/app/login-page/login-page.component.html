@@ -1,0 +1,27 @@
+<div class="bg-container">
+  <img class="logo" alt="maruti logo" src="maruti-logo.png" />
+  <h3 class="login-heading">Login</h3>
+  <p class="login-desc">Welcome to Dealer Management System</p>
+  <form class="form">
+    <div class="top-input-container">
+      <input
+        class="id-input"
+        type="text"
+        name="user-id"
+        placeholder="USER ID"
+        [(ngModel)]="userId"
+      />
+      <button class="go-button" (click)="onClickOtp()">🡒</button>
+    </div>
+    <div class="bottom-input-container">
+      <input
+        [(ngModel)]="otp"
+        class="otp-input"
+        type="text"
+        name="otp"
+        placeholder="OTP"
+      />
+      <button class="login-button" (click)="onLogin()">Login</button>
+    </div>
+  </form>
+</div>
